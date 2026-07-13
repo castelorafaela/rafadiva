@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Especial ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div id="hearts"></div>
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <section id="inicio" class="card">
+
+        <h3 class="mini">
+            SISTEMA DE CONVOCAÇÃO
+        </h3>
+
+        <h1>
+            Olá,
+            <span>Matheus gostosão 😏❤️</span>
+        </h1>
+
+        <p>
+
+            Você acaba de receber uma missão extremamente importante.
+
+        </p>
+
+        <p>
+
+            Objetivo:
+
+            <strong>
+                aceitar um encontro com a garota mais linda do mundo.
+            </strong>
+
+        </p>
+
+        <p>
+
+            Sim... estamos falando da
+            <strong>Rafa Castelo.</strong>
+
+        </p>
+
+        <div class="alerta">
+
+            ⚠️ Atenção:
+
+            Essa missão não pode ser recusada.
+
+        </div>
+
+        <button onclick="abrirEscolha()">
+
+            Começar ❤️
+
+        </button>
+
+    </section>
+
+    <section id="escolhas" class="card escondido">
+
+        <h2>
+
+            Escolha o sábado perfeito 📅
+
+        </h2>
+
+        <select id="data">
+
+        </select>
+
+        <h2>
+
+            Agora escolha o horário 🕕
+
+        </h2>
+
+        <select id="hora">
+
+        </select>
+
+        <h2>
+
+            Agora escolha onde vamos 🍻
+
+        </h2>
+
+        <select id="bar">
+
+            <option>
+
+                Janela
+
+            </option>
+
+            <option>
+
+                Boteco Curitiba
+
+            </option>
+
+            <option>
+
+                Algum bar da Prudente
+
+            </option>
+
+        </select>
+
+        <div class="botoes">
+
+            <button
+            class="aceito"
+            onclick="confirmarEncontro()">
+
+                Aceito ❤️
+
+            </button>
+
+            <button
+            id="nao"
+            class="nao">
+
+                Não 😅
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <section
+    id="final"
+    class="card escondido">
+
+        <h1>
+
+            Missão concluída ❤️
+
+        </h1>
+
+        <p id="textoFinal">
+
+        </p>
+
+        <button onclick="location.reload()">
+
+            Recomeçar
+
+        </button>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
