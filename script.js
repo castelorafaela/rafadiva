@@ -56,13 +56,14 @@ function preencherHorarios(){
 
             if(h===22 && m===30) continue;
 
-           const hora = String(h).padStart(2, "0");
-const minuto = String(m).padStart(2, "0");
+            const hora=String(h).padStart(2,"0");
+            const min=String(m).padStart(2,"0");
 
-const op = document.createElement("option");
+            const op=document.createElement("option");
 
-op.textContent = hora + ":" + minuto;
-op.value = hora + ":" + minuto;
+            op.textContent=${hora}:${min};
+
+            op.value=${hora}:${min};
 
             horaSelect.appendChild(op);
 
